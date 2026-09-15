@@ -34,7 +34,17 @@ const startTime = () => {
         sec = "0"+sec;
     }
 
-    return `${hour} : ${min} : ${sec}`;
+    let ampm; 
+    if(hour >= 12 && hour < 24){
+        ampm = "AM";
+    }
+
+    if(hour < 12){
+          ampm = "PM";
+    }
+    
+
+    return `${hour} : ${min} : ${sec}` ${ampm};
 }
 
 setInterval(function setTime() {
