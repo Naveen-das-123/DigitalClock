@@ -38,7 +38,7 @@ const startTime = () => {
 
 
     // Return final time
-    return `${hour} : ${min} : ${sec} ${ampm}`;
+    return `${hour} : ${min} : ${sec}`;
 };
 
 
