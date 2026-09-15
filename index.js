@@ -15,10 +15,10 @@ const startTime = () => {
 
 
     // Check AM or PM
-    if (hour >= 12) {
-        ampm = "PM";
-    } else {
+    if (hour >= 12 && hour < 24) {
         ampm = "AM";
+    } else {
+        ampm = "PM";
     }
 
 
