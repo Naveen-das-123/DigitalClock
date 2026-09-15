@@ -8,6 +8,32 @@ const startTime = () => {
     let min = date.getMinutes();
   let sec = date.getSeconds();
 
+     // convert hour into normal time
+    if(hour > 12){
+        hour = hour%12;
+    }
+
+    // check hour
+    if(hour > 9){
+    }
+    else{
+        hour = "0"+hour;
+    }
+
+    // check min
+     if(min > 9){
+    }
+    else{
+        min = "0"+min;
+    }
+    
+    //check sec
+    if(sec > 9){
+    }
+    else{
+        sec = "0"+sec;
+    }
+
     return `${hour} : ${min} : ${sec}`;
 }
 
