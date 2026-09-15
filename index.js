@@ -7,6 +7,16 @@ const startTime = () => {
     let hour = date.getHours();
     let min = date.getMinutes();
   let sec = date.getSeconds();
+    let ampm; 
+    
+    if(hour >= 12 && hour < 24){
+        ampm = "AM";
+    }
+
+    if(hour < 12){
+          ampm = "PM";
+    }
+    
 
      // convert hour into normal time
     if(hour > 12){
@@ -34,17 +44,7 @@ const startTime = () => {
         sec = "0"+sec;
     }
 
-    let ampm; 
-    if(hour >= 12 && hour < 24){
-        ampm = "AM";
-    }
-
-    if(hour < 12){
-          ampm = "PM";
-    }
-    
-
-    return `${hour} : ${min} : ${sec}` ${ampm};
+    return `${hour} : ${min} : ${sec} ${ampm}`;
 }
 
 setInterval(function setTime() {
