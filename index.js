@@ -35,7 +35,7 @@ const startTime = () => {
         sec = "0"+sec;
     }
 
-    return `${hour} : ${min} : ${sec} ${ampm}`;
+    return `${hour} : ${min} : ${sec}`;
 }
 
 setInterval(function setTime() {
