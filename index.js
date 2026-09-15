@@ -11,17 +11,6 @@ const startTime = () => {
     let min = date.getMinutes();
     let sec = date.getSeconds();
 
-    let ampm;
-
-
-    // Check AM or PM
-    if (hour >= 12 && hour < 24) {
-        ampm = "PM";
-    } else {
-        ampm = "AM";
-    }
-
-
     // Convert 24-hour format into 12-hour format
     if (hour === 0) {
         hour = 12;
